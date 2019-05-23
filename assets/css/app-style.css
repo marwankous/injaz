@@ -86,10 +86,10 @@ body {
 }
 
 .tdhide{
-    font-size: 0px;
-    border-bottom: hidden;
-    border-left: hidden;
-    border-right: hidden;
+    font-size: 0px !important;
+    border-bottom: hidden !important;
+    border-left: hidden !important;
+    border-right: hidden !important;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
