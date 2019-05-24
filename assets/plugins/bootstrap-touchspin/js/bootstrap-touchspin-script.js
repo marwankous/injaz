@@ -45,8 +45,10 @@ $(document).ready(function() {
             });
 
 
-            $("input[name='demo_vertical']").TouchSpin({
-                  verticalbuttons: true
+            $("input[id='vertical']").TouchSpin({
+                  verticalbuttons: true,
+                  min: 1900,
+                  max: 2300,
                 });
 
             $("input[name='demo_vertical2']").TouchSpin({
