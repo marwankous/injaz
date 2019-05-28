@@ -6,22 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
-  <title>INJAZ - Factures D'Achat</title>
+  <title>Facturation</title>
   <!--favicon-->
   <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
   <!--Select Plugins-->
   <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet"/>
-  <!--Touchspin-->
-  <link href="assets/plugins/bootstrap-touchspin/css/jquery.bootstrap-touchspin.css" rel="stylesheet" type="text/css">
   <!-- simplebar CSS-->
   <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet"/>
   <!-- Bootstrap core CSS-->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
-    <!--Data Tables -->
-  <link href="assets/plugins/bootstrap-datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
-  <link href="assets/plugins/bootstrap-datatable/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css">
-  <!-- animate CSS-->
-  <link href="assets/css/animate.css" rel="stylesheet" type="text/css"/>
   <!-- Icons CSS-->
   <link href="assets/css/icons.css" rel="stylesheet" type="text/css"/>
   <!-- Sidebar CSS-->
@@ -44,19 +37,19 @@
   </div>
   <ul class="sidebar-menu do-nicescrol">
      <li class="sidebar-header">General</li>
-     <li><a href="index.html" class="waves-effect"><i class="zmdi fa fa-home"></i> <span>Accueil</span></a></li>
-     <li><a href="produit.html" class="waves-effect"><i class="zmdi fa fa-cubes"></i> <span>Produits</span></a></li>
+     <li><a href="#" class="waves-effect"><i class="zmdi zmdi-widgets"></i> <span>Accueil</span></a></li>
+     <li><a href="#" class="waves-effect"><i class="zmdi zmdi-widgets"></i> <span>Produits</span></a></li>
      <li><a href="javaScript:void();" class="waves-effect"><i class="zmdi zmdi-layers"></i><span>Vente</span> <i class="fa fa-angle-left pull-right"></i></a>
        <ul class="sidebar-submenu">
-       <li><a href="client.html"><i class="zmdi zmdi-long-arrow-right"></i> Clients</a></li>
-       <li><a href="facture.html"><i class="zmdi zmdi-long-arrow-right"></i> Factures</a></li>
-       <li><a href="facture.html"><i class="zmdi zmdi-long-arrow-right"></i> Generer Facture</a></li>
+       <li><a href="#"><i class="zmdi zmdi-long-arrow-right"></i> Clients</a></li>
+       <li><a href="#"><i class="zmdi zmdi-long-arrow-right"></i> Factures</a></li>
+       <li><a href="#"><i class="zmdi zmdi-long-arrow-right"></i> Generer Facture</a></li>
        </ul>
      </li>
      <li><a href="javaScript:void();" class="waves-effect"><i class="zmdi zmdi-layers"></i><span>Achat</span> <i class="fa fa-angle-left pull-right"></i></a>
        <ul class="sidebar-submenu">
-       <li><a href="Fournisseur.html"><i class="zmdi zmdi-long-arrow-right"></i> Fournisseurs</a></li>
-       <li><a href="facture_achat.html"><i class="zmdi zmdi-long-arrow-right"></i> Facture d'Achat</a></li>
+       <li><a href="#"><i class="zmdi zmdi-long-arrow-right"></i> Fournisseurs</a></li>
+       <li><a href="#"><i class="zmdi zmdi-long-arrow-right"></i> Facture d'Achat</a></li>
        <li><a href="#"><i class="zmdi zmdi-long-arrow-right"></i> Enregistrer Facture Achat</a></li>
        </ul>
      </li>
@@ -123,89 +116,30 @@
     <!-- Breadcrumb-->
      <div class="row pt-2 pb-2">
         <div class="col-sm-9">
-		    <h4 class="page-title">Factures Achat</h4>
+		    <h4 class="page-title">Accueil</h4>
 		    <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="javaScript:void();">Accueil</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Factures Achat</li>
+            <li class="breadcrumb-item active" aria-current="page">Facturation</li>
          </ol>
 	   </div>
      </div>
     <!-- End Breadcrumb-->
       <div class="row">
-        <div class="col-lg-12"> 
-         <div class="row">
-          <div class="col-lg-12">
-            <div class="card">
-              <div class="card-header">
-                  <div class="form-row d-flex justify-content-between">
-                      <div class="form-group col-5">
-                              <label>Année de facturation</label>
-                              <input id="vertical" value="2018">
-                        </div>
-                        <div class="form-group col-5">
-                            <label>Fournisseur</label>
-                            <select class="form-control single-select">
-                              <option>Newzeland</option>
-                              <option>Dubai</option>
-                              <option>United Kingdom</option>
-                             </select>
-                          </div>
-                   </div>
-                   <button type="button" class="btn btn-outline-dark waves-effect waves-light m-1"> <i class="fa fa-filter"></i> <span>Filtrer</span> </button>
-              </div>
-              <div class="card-body">
-                <div class="table-responsive">
-                <table id="example" class="table table-bordered">
-                  <thead>
-                    <tr>
-                      <th>Numéro de Facturation</th>
-                      <th>Fournisseur</th>
-                      <th>Date de facturaion</th>
-                      <th>Montant TTC</th>
-                      <th>TVA</th>
-                      <th>Reste à Payer</th>
-                      <th>Accès à la facture</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>System Architect</td>
-                        <td>Edinburgh</td>
-                        <td>61</td>
-                        <td>2011/04/25</td>
-                        <td>$320,800</td>
-                        <td>System Architect</td>
-                        <td>System Architect</td>
-                      </tr>
-                    </tbody>
-                    <tfoot>
-                      <tr>
-                        <th>Numéro de Facturation</th>
-                        <th>Fournisseur</th>
-                        <th>Date de facturaion</th>
-                        <th>Montant TTC</th>
-                        <th>TVA</th>
-                        <th>Reste à Payer</th> 
-                        <th class="tdhide">Accès à la facture</th>
-                      </tr>
-                    </tfoot>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!-- End Row-->
-        
+        <div class="col-lg-12">
+		  <div style="height:600px"> <!--Please remove the height before using this page-->
+		      <h1>Blank</h1>
+          <p>This is an example of a blank page that you can use as a starting point for creating new ones.</p>
+		  </div>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- End container-fluid-->
-</div><!--End content-wrapper-->
-<!--Start Back To Top Button-->
-  <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
-  <!--End Back To Top Button-->
-  <!--start color switcher-->
-  <div class="right-sidebar">
+    <!-- End container-fluid-->
+   </div><!--End content-wrapper-->
+   <!--Start Back To Top Button-->
+    <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
+    <!--End Back To Top Button-->
+   <!--start color switcher-->
+   <div class="right-sidebar">
     <div class="switcher-icon">
       <i class="zmdi zmdi-settings zmdi-hc-spin"></i>
     </div>
@@ -230,11 +164,11 @@
         <li id="theme11"></li>
         <li id="theme12"></li>
       </ul>
-    </div>
-  </div>
+     </div>
+   </div>
   <!--end color cwitcher-->
-</div>
-<!--End wrapper-->
+  </div>
+  <!--End wrapper-->
   <!-- Bootstrap core JavaScript-->
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
@@ -245,40 +179,8 @@
   <script src="assets/js/sidebar-menu.js"></script>
   <!-- Custom scripts -->
   <script src="assets/js/app-script.js"></script>
-  <!--Bootstrap Touchspin Js-->
-  <script src="assets/plugins/bootstrap-touchspin/js/jquery.bootstrap-touchspin.js"></script>
-  <script src="assets/plugins/bootstrap-touchspin/js/bootstrap-touchspin-script.js"></script>
   <!--Select Plugins Js-->
   <script src="assets/plugins/select2/js/select2.min.js"></script>
-  <!--Data Tables js-->
-  <script src="assets/plugins/bootstrap-datatable/js/jquery.dataTables.min.js"></script>
-  <script src="assets/plugins/bootstrap-datatable/js/dataTables.bootstrap4.min.js"></script>
-  <script src="assets/plugins/bootstrap-datatable/js/dataTables.buttons.min.js"></script>
-  <script src="assets/plugins/bootstrap-datatable/js/buttons.bootstrap4.min.js"></script>
-  <script src="assets/plugins/bootstrap-datatable/js/jszip.min.js"></script>
-  <script src="assets/plugins/bootstrap-datatable/js/pdfmake.min.js"></script>
-  <script src="assets/plugins/bootstrap-datatable/js/vfs_fonts.js"></script>
-  <script src="assets/plugins/bootstrap-datatable/js/buttons.html5.min.js"></script>
-  <script src="assets/plugins/bootstrap-datatable/js/buttons.print.min.js"></script>
-  <script src="assets/plugins/bootstrap-datatable/js/buttons.colVis.min.js"></script>
-
-    <script>
-     $(document).ready(function() {
-      //Default data table
-       $('#default-datatable').DataTable();
-
-
-       var table = $('#example').DataTable( {
-        lengthChange: false,
-        buttons: [ 'excel', 'pdf' ]
-      } );
- 
-     table.buttons().container()
-        .appendTo( '#example_wrapper .col-md-6:eq(0)' );
-      
-      } );
-
-    </script>
   <script>
       $(document).ready(function() {
           $('.single-select').select2(); 
