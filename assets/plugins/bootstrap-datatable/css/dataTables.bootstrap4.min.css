@@ -148,3 +148,17 @@ div.table-responsive>div.dataTables_wrapper>div.row>div[class^="col-"]:first-chi
 div.table-responsive>div.dataTables_wrapper>div.row>div[class^="col-"]:last-child {
 	padding-right: 0
 }
+
+/* custome modification */
+
+#default-datatable {
+	table-layout: fixed;
+	width: 100% !important;
+  }
+  #default-datatable td,
+  #default-datatable th{
+	width: auto !important;
+	white-space: normal;
+	text-overflow: ellipsis;
+	overflow: hidden;
+  }
