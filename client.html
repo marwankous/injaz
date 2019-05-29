@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
-  <title>Facturation</title>
+  <title>INJAZ - client</title>
   <!--favicon-->
   <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
   <!--Data Tables -->
@@ -132,7 +132,7 @@
               <div class="card">
                   <div class="card-body">
                       <div class="form-row  d-flex justify-content-between col-lg-12">
-                        <div class="form-group">
+                        <div class="form-group col-lg-12">
                           <label>Catégorie Client *</label>
                           <select class="form-control single-select">
                               <option>India</option>
@@ -146,59 +146,71 @@
                           </select>
                           <button type="button" class="btn btn-primary waves-effect waves-light m-1">Ajouter</button>
                         </div>
-                        <div class="form-group">
+                      </div>
+                      <div class="form-row  d-flex justify-content-between col-lg-12">
+                        <div class="form-group col-lg-4">
                           <label>Client *</label>
                           <select class="form-control single-select">
-                              <option>India</option>
-                              <option>England</option>
-                              <option>America</option>
-                              <option>China</option>
-                              <option>Australiya</option>
-                              <option>Newzeland</option>
-                              <option>Dubai</option>
-                              <option>United Kingdom</option>
+                            <option>India</option>
+                            <option>England</option>
+                            <option>America</option>
+                            <option>China</option>
+                            <option>Australiya</option>
+                            <option>Newzeland</option>
+                            <option>Dubai</option>
+                            <option>United Kingdom</option>
                           </select>
                           <button type="button" class="btn btn-primary waves-effect waves-light m-1">Ajouter</button>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group col-lg-4">
                           <label>ICE</label>
                           <input type="text" class="form-control">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group col-lg-4">
                           <label>IF</label>
                           <input type="text" class="form-control">
                         </div>
                       </div>
                       <div class="form-row  d-flex justify-content-between col-lg-12">
-                        <div class="form-group col-lg-9">
-                          <label>Adresse *</label>
-                          <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group">
-                          <label>Ville *</label>
-                          <input type="text" class="form-control">
-                        </div>
-                      </div>
-                      <div class="form-row  d-flex justify-content-between col-lg-12">
-                        <div class="input-group col-lg-4">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fa fa-at"></i></span>
+                            <div class="form-group col-lg-12">
+                              <label>Adresse *</label>
+                              <input type="text" class="form-control">
                             </div>
-                            <input type="text" class="form-control" placeholder="Email">
+                      </div>
+                      <div class="form-row d-flex justify-content-between col-lg-12">
+
+                        <div class="input-group col-lg-4 ">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">Ville *</span>
                           </div>
-                          <div class="input-group col-lg-4">
-                              <div class="input-group-prepend">
-                                  <span class="input-group-text"><i class="fa fa-phone"></i></span>
-                              </div>
-                              <input type="text" class="form-control" placeholder="Téléphone">
-                            </div>
-                          <div class="input-group col-lg-4">
-                              <div class="input-group-prepend">
-                                  <span class="input-group-text"><i class="fa fa-fax"></i></span>
-                              </div>
-                              <input type="text" class="form-control" placeholder="Fax">
-                            </div>
+                          <input type="text" class="form-control" placeholder="Ville">
+                        </div>
+                        <div class="input-group col-lg-4 ">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">Email</span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Email">
+                        </div>
                       </div>
+                      <br>
+                      <div class="form-row d-flex justify-content-between col-lg-12">
+                        <div class="input-group col-lg-4">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">Téléphone</i></span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Téléphone">
+                        </div>
+                            <div class="input-group col-lg-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Fax</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Fax">
+                              </div>
+
+
+
+                      </div>
+                      
                       <br>
                       <div class="form-row  d-flex justify-content-end col-lg-12">
                           <button type="button" class="btn btn-primary waves-effect waves-light m-1">Valider</button>
@@ -219,7 +231,6 @@
               </div>
               <div id="collapse-6" class="collapse" data-parent="#accordion2">
                   <div class="card-body">
-                      <div class="table col-12 ">
                       <table id="default-datatable" class="table table-bordered">
                         <thead>
                             <tr>
@@ -401,7 +412,6 @@
                               </tr>
                         </tfoot>
                     </table>
-                    </div>
                     </div>
               </div>
             </div>

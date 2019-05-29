@@ -151,14 +151,16 @@ div.table-responsive>div.dataTables_wrapper>div.row>div[class^="col-"]:last-chil
 
 /* custome modification */
 
-#default-datatable {
+#default-datatable, #example_wrapper {
 	table-layout: fixed;
 	width: 100% !important;
   }
   #default-datatable td,
-  #default-datatable th{
+  #example_wrapper td,
+  #default-datatable th,
+  #example_wrapper th{
 	width: auto !important;
 	white-space: normal;
 	text-overflow: ellipsis;
 	overflow: hidden;
-  }
+  } 

@@ -1,4 +1,5 @@
 !function($) {
+	
     "use strict";
 
     var EasyPieChart = function() {};
@@ -18,7 +19,11 @@
 			}
 		});
 
-		$('.easy-pie-chart-2').easyPieChart({
+		$('.easy-pie-chart-2').easyPieChart(
+			
+			{
+			
+
 			easing: 'easeOutBounce',
 			barColor : '#02ba5a',
 			lineWidth: 6,
