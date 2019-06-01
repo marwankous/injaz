@@ -131,8 +131,9 @@
             <div class="col-lg-12">
               <div class="card">
                   <div class="card-body">
-                      <div class="form-row  d-flex justify-content-between col-lg-12">
-                        <div class="form-group col-lg-12">
+                    <div class="d-flex justify-content-start col-12">
+                      <div class="form-row  d-flex justify-content-between ">
+                        <div class="form-group col-4">
                           <label>Catégorie Client *</label>
                           <select class="form-control single-select">
                               <option>India</option>
@@ -146,9 +147,7 @@
                           </select>
                           <button type="button" class="btn btn-primary waves-effect waves-light m-1">Ajouter</button>
                         </div>
-                      </div>
-                      <div class="form-row  d-flex justify-content-between col-lg-12">
-                        <div class="form-group col-lg-4">
+                        <div class="form-group col-4">
                           <label>Client *</label>
                           <select class="form-control single-select">
                             <option>India</option>
@@ -162,6 +161,30 @@
                           </select>
                           <button type="button" class="btn btn-primary waves-effect waves-light m-1">Ajouter</button>
                         </div>
+                      </div></div>
+                      <hr>
+                      <div class="row invoice-info">
+                          <div class="col-sm-4 invoice-col">
+                            <address>
+                             <strong>IF:</strong> FV44658789987<br>
+                             <strong>ICE:</strong> F64FD6H45<br>
+                            </address>
+                          </div><!-- /.col -->
+                          <div class="col-sm-4 invoice-col">
+                            <address>
+                             <strong>Adresse:</strong> av XXX QX XXXX<br>
+                             <strong>Ville:</strong> Rabat<br>
+                            </address>
+                          </div><!-- /.col -->
+                          <div class="col-sm-4 invoice-col">
+                            <address>
+                             <strong>Email:</strong> example@mail.com<br>
+                             <strong>Téléphone:</strong>  06XXXXXXXX<br>
+                             <strong>FAX:</strong> 06XXXXXXXX<br>
+                            </address>
+                          </div><!-- /.col -->
+                        </div><!-- /.row -->
+                      <!-- <div class="form-row  d-flex justify-content-between col-lg-12">
                         <div class="form-group col-lg-4">
                           <label>ICE</label>
                           <input type="text" class="form-control">
@@ -206,10 +229,10 @@
                                 </div>
                                 <input type="text" class="form-control" placeholder="Fax">
                               </div>
-                      </div>
-                      <br>
+                      </div> -->
+                      <!-- <br> -->
                       <div class="form-row  d-flex justify-content-end col-lg-12">
-                          <button type="button" class="btn btn-primary waves-effect waves-light m-1">Valider</button>
+                          <button type="button" class="btn btn-warning waves-effect waves-light m-1">Modifie</button>
                       </div>
                     </div>
               </div>
@@ -223,7 +246,7 @@
                   <button class="btn btn-link shadow-none collapsed" data-toggle="collapse" data-target="#collapse-6" aria-expanded="false" aria-controls="collapse-6">
                   </button>
               </div>
-              <div id="collapse-6" class="collapse" data-parent="#accordion2">
+              <div id="collapse-6" class="collapse show" data-parent="#accordion2">
                   <div class="card-body">
                       <table id="default-datatable" class="table table-bordered">
                         <thead>
