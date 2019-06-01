@@ -2,226 +2,6 @@ $(function() {
     "use strict";
 
 
-  // chart 1
-	
-	 $('.fleet-chart').easyPieChart({
-		easing: 'easeOutBounce',
-		barColor : '#ffffff',
-		lineWidth: 10,
-		trackColor : 'rgba(255, 255, 255, 0.12)',
-		scaleColor: false,
-		onStep: function(from, to, percent) {
-			$(this.el).find('.fleet-status-percent').text(Math.round(percent));
-		}
-	 });
-  
-
-
-  // chart 2
-
-		var ctx = document.getElementById("deliverychart").getContext('2d');
-			var myChart = new Chart(ctx, {
-				type: 'doughnut',
-				data: {
-					labels: ["Within Time Limit", "Out of Time Limit"],
-					datasets: [{
-						backgroundColor: [
-							"#fba540",
-							"#03d0ea"
-						],
-						data: [325, 145],
-						borderWidth: [0, 0]
-					}]
-				},
-			options: {
-			   legend: {
-				 position :"bottom",	
-				 display: false,
-				    labels: {
-					  fontColor: '#585757',  
-					  boxWidth:15
-				   }
-				}
-				,
-				tooltips: {
-				  displayColors:false
-				}
-			   }
-			});
-
-
- // chart 3
-
-     var ctx = document.getElementById("regionchart").getContext('2d');
-			var myChart = new Chart(ctx, {
-				type: 'pie',
-				data: {
-					labels: ["Germany", "France", "Switzerland", "Australia"],
-					datasets: [{
-						backgroundColor: [
-							"#14abef",
-							"#02ba5a",
-							"#d13adf",
-							"#fba540"
-						],
-						data: [55, 220, 40, 40],
-						borderWidth: [0, 0, 0, 0]
-					}]
-				},
-			options: {
-			   legend: {
-				 position :"bottom",	
-				 display: true,
-				    labels: {
-					  fontColor: '#585757',  
-					  boxWidth:10
-				   }
-				}
-			   }
-			});
-
-
-
-        // chart 3
-
-     var ctx = document.getElementById('revenueChart').getContext('2d');
-              
-       var myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: ['01', '02', '03', '04', '05', '06'],
-          datasets: [{
-            label: 'Total Revenue',
-            data: [10, 18, 12, 8, 15, 10],
-            backgroundColor: 'rgba(255, 255, 255, 0.12)',
-            borderColor: '#fff',
-            pointBackgroundColor:'#fff',
-            pointHoverBackgroundColor:'#fff',
-            pointBorderColor :'#fff',
-            pointHoverBorderColor :'#fff',
-            pointBorderWidth :1,
-            pointRadius :0,
-            pointHoverRadius :4,
-            borderWidth: 2
-          }]
-        }
-        ,
-        options: {
-              legend: {
-                position: false,
-                display: true,
-            },
-        tooltips: {
-           enabled: false
-      },
-     scales: {
-          xAxes: [{
-            display: false,
-            gridLines: false
-          }],
-          yAxes: [{
-            display: false,
-            gridLines: false
-          }]
-        }
-        }
-    
-      });
-
-
-      // chart 4
-
-     var ctx = document.getElementById('profitChart').getContext('2d');
-              
-       var myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: ['01', '02', '03', '04', '05', '06'],
-          datasets: [{
-            label: 'Total Profit',
-            data: [10, 18, 12, 8, 15, 10],
-            backgroundColor: 'rgba(255, 255, 255, 0.12)',
-            borderColor: '#fff',
-            pointBackgroundColor:'#fff',
-            pointHoverBackgroundColor:'#fff',
-            pointBorderColor :'#fff',
-            pointHoverBorderColor :'#fff',
-            pointBorderWidth :1,
-            pointRadius :0,
-            pointHoverRadius :4,
-            borderWidth: 2
-          }]
-        }
-        ,
-        options: {
-              legend: {
-                position: false,
-                display: true,
-            },
-        tooltips: {
-           enabled: false
-      },
-     scales: {
-          xAxes: [{
-            display: false,
-            gridLines: false
-          }],
-          yAxes: [{
-            display: false,
-            gridLines: false
-          }]
-        }
-        }
-    
-      });
-
-
-	   // chart 5
-
-     var ctx = document.getElementById('shipmentChart').getContext('2d');
-              
-       var myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: ['01', '02', '03', '04', '05', '06'],
-          datasets: [{
-            label: 'Total Shipments',
-            data: [10, 18, 12, 8, 15, 10],
-            backgroundColor: 'rgba(255, 255, 255, 0.12)',
-            borderColor: '#fff',
-            pointBackgroundColor:'#fff',
-            pointHoverBackgroundColor:'#fff',
-            pointBorderColor :'#fff',
-            pointHoverBorderColor :'#fff',
-            pointBorderWidth :1,
-            pointRadius :0,
-            pointHoverRadius :4,
-            borderWidth: 2
-          }]
-        }
-        ,
-        options: {
-              legend: {
-                position: false,
-                display: true,
-            },
-        tooltips: {
-           enabled: false
-      },
-     scales: {
-          xAxes: [{
-            display: false,
-            gridLines: false
-          }],
-          yAxes: [{
-            display: false,
-            gridLines: false
-          }]
-        }
-        }
-    
-      });
-
 
     // chart 6
 
@@ -239,14 +19,14 @@ $(function() {
 			var myChart = new Chart(ctx, {
 				type: 'bar',
 				data: {
-					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+          labels: ["Janv", "Févr", "Mars", "Avr", "Mai", "Juin", "Juill", "Août", "Sept", "Oct", "Nov", "Déc"],
 					datasets: [{
-						label: 'Route',
+						label: 'Vente',
 						data: [15, 8, 12, 5, 12, 8, 16, 25, 15, 10, 20, 10],
 						backgroundColor: gradientStroke3,
             hoverBackgroundColor: gradientStroke3
 					}, {
-						label: 'Time',
+						label: 'Achat',
 						data: [25, 18, 22, 15, 22, 18, 26, 35, 25, 20, 30, 20],
 						backgroundColor: gradientStroke4,
             hoverBackgroundColor: gradientStroke4,
@@ -290,10 +70,6 @@ $(function() {
 
 			 }
 			});
-
-
-
-
 
 
 
