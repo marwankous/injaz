@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
-  <title>INJAZ - Générer Facture</title>
+  <title>INJAZ - Enregistrer Facture d'Achat</title>
   <!--favicon-->
   <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
   <!--Data Tables -->
@@ -121,8 +121,8 @@
     <!-- Breadcrumb-->
      <div class="row pt-2 pb-2">
         <div class="col-sm-9">
-        <h4 class="page-title">Générer Facture</h4>
-        <button type="button" class="btn btn-outline-info waves-effect waves-light m-1">Nouvelle Facture</button>
+        <h4 class="page-title">Enregistrer Facture d'Achat</h4>
+        <button type="button" class="btn btn-outline-info waves-effect waves-light m-1">Nouvelle Facture d'Achat</button>
 	   </div>
      </div>
     <!-- End Breadcrumb-->
@@ -144,24 +144,13 @@
                               <input id="password2" name="password" type="text" class="form-control">
                           </div>
                         </div>
-                        <div class="form-row d-flex justify-content-around">
-                          <div class="form-group col-lg-3">
-                              <label for="confirm2">Titre (Optionnel)</label>
-                              <input id="confirm2" name="confirm" type="text" class="form-control">
-                          </div>
-
-                          <div class="form-group col-lg-3">
-                              <label for="confirm2">N° BL (Optionnel)</label>
-                              <input id="confirm2" name="confirm" type="text" class="form-control">
-                          </div>
-                        </div>
                           <button type="submit" class="btn btn-primary"><i class="icon-lock"></i>Sauvegarder</button>
                       </section>
-                      <h3>Client</h3>
+                      <h3>Fournisseur</h3>
                       <section>
                           <div class="form-row d-flex justify-content-around">
                           <div class="form-group col-lg-3">
-                              <label for="name2">Client *</label>
+                              <label for="name2">fournisseur *</label>
                               <select class="form-control single-select">
                                 <option></option>
                                 <option>England</option>
@@ -309,8 +298,7 @@
                                                   <!-- Content Header (Page header) -->
                   <section class="content-header">
                       <h3>
-                        Invoice
-                        <small>#007612</small>
+                        Invoice <small>#007612</small>
                       </h3>
                     </section>
   
@@ -662,20 +650,21 @@
       $("div.actions").insertBefore("div.content");
   </script>
        <style>
-          .wizard .content {
-           min-height: 100px !important;
-       }
-       .wizard .content > .body {
-           width: 100% !important;
-           height: auto !important;
-           padding: 15px !important;
-           position: absolute;
-       }
-       .wizard .content .body.current {
-           position: relative !important;
-       }
-       #steps-uid-0 .select2-container--default .select2-selection--single {
-          background-color: #F3F4FA !important;
-          border: 1px solid #ccc !important;}
-   </style>
+              .wizard .content {
+               min-height: 100px !important;
+           }
+           .wizard .content > .body {
+               width: 100% !important;
+               height: auto !important;
+               padding: 15px !important;
+               position: absolute;
+           }
+           .wizard .content .body.current {
+               position: relative !important;
+           }
+           #steps-uid-0 .select2-container--default .select2-selection--single {
+              background-color: #F3F4FA !important;
+              border: 1px solid #ccc !important;}
+       </style>
+</body>
 </html>
