@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+  <title>INJAZ - Modifier le profile de la société</title>
+  <!--favicon-->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <!--Select Plugins-->
+  <link href="assets/plugins/select2/css/select2.min.css" rel="stylesheet"/>
+  <!-- simplebar CSS-->
+  <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet"/>
+  <!-- Bootstrap core CSS-->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Icons CSS-->
+  <link href="assets/css/icons.css" rel="stylesheet" type="text/css"/>
+  <!-- Sidebar CSS-->
+  <link href="assets/css/sidebar-menu.css" rel="stylesheet"/>
+  <!-- Custom Style-->
+  <link href="assets/css/app-style.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- start loader -->
+   <div id="pageloader-overlay" class="visible incoming"><div class="loader-wrapper-outer"><div class="loader-wrapper-inner" ><div class="loader"></div></div></div></div>
+<!-- end loader -->
+<!-- Start wrapper-->
+ <div id="wrapper">
+  <!--Start sidebar-wrapper-->
+   <div id="sidebar-wrapper" class="bg-theme bg-theme2" data-simplebar="" data-simplebar-auto-hide="true">
+    <div class="brand-logo">
+     <a href="index.html">
+      <img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
+    </a>
+  </div>
+  <ul class="sidebar-menu do-nicescrol">
+     <li class="sidebar-header">General</li>
+     <li><a href="#" class="waves-effect"><i class="zmdi zmdi-widgets"></i> <span>Accueil</span></a></li>
+     <li><a href="#" class="waves-effect"><i class="zmdi zmdi-widgets"></i> <span>Produits</span></a></li>
+     <li><a href="javaScript:void();" class="waves-effect"><i class="zmdi zmdi-layers"></i><span>Vente</span> <i class="fa fa-angle-left pull-right"></i></a>
+       <ul class="sidebar-submenu">
+       <li><a href="#"><i class="zmdi zmdi-long-arrow-right"></i> Clients</a></li>
+       <li><a href="#"><i class="zmdi zmdi-long-arrow-right"></i> Factures</a></li>
+       <li><a href="#"><i class="zmdi zmdi-long-arrow-right"></i> Generer Facture</a></li>
+       </ul>
+     </li>
+     <li><a href="javaScript:void();" class="waves-effect"><i class="zmdi zmdi-layers"></i><span>Achat</span> <i class="fa fa-angle-left pull-right"></i></a>
+       <ul class="sidebar-submenu">
+       <li><a href="#"><i class="zmdi zmdi-long-arrow-right"></i> Fournisseurs</a></li>
+       <li><a href="#"><i class="zmdi zmdi-long-arrow-right"></i> Facture d'Achat</a></li>
+       <li><a href="#"><i class="zmdi zmdi-long-arrow-right"></i> Enregistrer Facture Achat</a></li>
+       </ul>
+     </li>
+     <li>
+   </ul>
+  
+  </div>
+  <!--End sidebar-wrapper-->
+<!--Start topbar header-->
+<header class="topbar-nav">
+ <nav class="navbar navbar-expand fixed-top">
+  <ul class="navbar-nav mr-auto align-items-center">
+    <li class="nav-item">
+      <a class="nav-link toggle-menu" href="javascript:void();">
+       <i class="icon-menu menu-icon"></i>
+     </a>
+    </li>
+  </li>
+  <li class="nav-item col-12">
+    <form class="d-flex flex-nowrap" >
+          <select class="form-control single-select">
+              <option>India</option>
+              <option>England</option>
+              <option>America</option>
+          </select>
+        <button type="button" class="btn btn-primary btn-sm btn-round" style="margin-left: 1rem">Changer de Société</button>
+    </form>
+  </li>
+  </ul>  
+  <ul class="navbar-nav align-items-center right-nav-link">
+    <li class="nav-item">
+      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
+        <span class="user-profile"><img src="https://via.placeholder.com/110x110" class="img-circle" alt="user avatar"></span>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-right">
+       <li class="dropdown-item user-details">
+        <a href="javaScript:void();">
+           <div class="media">
+             <div class="avatar"><img class="align-self-start mr-3" src="https://via.placeholder.com/110x110" alt="user avatar"></div>
+            <div class="media-body">
+            <h6 class="mt-2 user-title">Sarajhon Mccoy</h6>
+            <p class="user-subtitle">mccoy@example.com</p>
+            </div>
+           </div>
+          </a>
+        </li>
+        <li class="dropdown-divider"></li>
+        <li class="dropdown-item"><i class="icon-envelope mr-2"></i> Inbox</li>
+        <li class="dropdown-divider"></li>
+        <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Account</li>
+        <li class="dropdown-divider"></li>
+        <li class="dropdown-item"><i class="icon-settings mr-2"></i> Setting</li>
+        <li class="dropdown-divider"></li>
+        <li class="dropdown-item"><i class="icon-power mr-2"></i> Logout</li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</header>
+<!--End topbar header-->
+<div class="clearfix"></div>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+    <!-- Breadcrumb-->
+     <div class="row pt-2 pb-2">
+        <div class="col-sm-9">
+		    <h4 class="page-title">Modifier le profile de la société</h4>
+	   </div>
+     </div>
+    <!-- End Breadcrumb-->
+    <div class="row">
+        <div class="col-12">
+           <div class="card">
+             <div class="card-body">
+              <form>
+                <div class="row ">
+                  <div class="row d-flex justify-content-around col-12">
+                    <img style=" height:200px ;margin-bottom: 2em" src="https://via.placeholder.com/800x500">
+                  </div>
+                  <div class=" d-flex justify-content-between col-12">
+
+
+                    <div class="col-6 " >
+                      <div class="form-group row">
+                          <label for="input-20" class="col-sm-3 col-form-label">Nom *</label>
+                          <div class="col-sm-8">
+                          <input type="text" class="form-control col-lg-8" id="input-20">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input-21" class="col-sm-3 col-form-label">Adresse *</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control col-lg-8" id="input-21">
+                            </div>
+                          </div>
+                      <div class="form-group row">
+                          <label for="input-22" class="col-sm-3 col-form-label">IF *</label>
+                          <div class="col-sm-8">
+                              <input type="text" class="form-control col-lg-8" id="input-22">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input-23" class="col-sm-3 col-form-label">Téléphone</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control col-lg-8" id="input-23">
+                            </div>
+                          </div>
+                      <div class="form-group row">
+                          <label for="input-24" class="col-sm-3 col-form-label">Téléphone 2</label>
+                          <div class="col-sm-8">
+                              <input type="text" class="form-control col-lg-8" id="input-24">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input-25" class="col-sm-3 col-form-label">Email</label>
+                            <div class="col-sm-8">
+                            <input type="text" class="form-control col-lg-8" id="input-25">
+                            </div>
+                          </div>
+                        <div class="form-group row">
+                            <label for="input-26" class="col-sm-3 col-form-label">RIB</label>
+                            <div class="col-sm-8">
+                            <input type="text" class="form-control col-lg-8" id="input-26">
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-6" >
+                      <div class="form-group row">
+                          <label for="input-27" class="col-sm-3 col-form-label">ICE *</label>
+                          <div class="col-sm-8">
+                          <input type="text" class="form-control col-lg-8" id="input-27">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input-28" class="col-sm-3 col-form-label">TP *</label>
+                            <div class="col-sm-8">
+                            <input type="text" class="form-control col-lg-8" id="input-28">
+                            </div>
+                          </div>
+                      <div class="form-group row">
+                          <label for="input-29" class="col-sm-3 col-form-label">RC *</label>
+                          <div class="col-sm-8">
+                          <input type="text" class="form-control col-lg-8" id="input-29">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input-30" class="col-sm-3 col-form-label">Fax</label>
+                            <div class="col-sm-8">
+                            <input type="text" class="form-control col-lg-8" id="input-30">
+                            </div>
+                          </div>
+                      <div class="form-group row">
+                          <label for="input-31" class="col-sm-3 col-form-label">CNSS</label>
+                          <div class="col-sm-8">
+                          <input type="text" class="form-control col-lg-8" id="input-31">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input-32" class="col-sm-3 col-form-label">Site Web</label>
+                            <div class="col-sm-8">
+                            <input type="text" class="form-control col-lg-8" id="input-32">
+                            </div>
+                          </div>
+                        <div class="form-group row">
+                            <label for="input-33" class="col-sm-3 col-form-label">SWIFT</label>
+                            <div class="col-sm-8">
+                            <input type="text" class="form-control col-lg-8" id="input-33">
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+
+                  </div>
+
+             <div class="form-row d-flex justify-content-between">
+              <button type="submit" class="btn btn-primary"> Retour à l'ecran de connexion</button>
+              <button type="submit" class="btn btn-primary"> Valider cette société</button>
+            </div>
+            </form>
+           </div>
+           </div>
+        </div>
+    </div>
+    <!-- End container-fluid-->
+   </div><!--End content-wrapper-->
+   <!--Start Back To Top Button-->
+    <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
+    <!--End Back To Top Button-->
+   <!--start color switcher-->
+   <div class="right-sidebar">
+    <div class="switcher-icon">
+      <i class="zmdi zmdi-settings zmdi-hc-spin"></i>
+    </div>
+    <div class="right-sidebar-content">
+      <p class="mb-0">Gaussion Texture</p>
+      <hr>
+      <ul class="switcher">
+        <li id="theme1"></li>
+        <li id="theme2"></li>
+        <li id="theme3"></li>
+        <li id="theme4"></li>
+        <li id="theme5"></li>
+        <li id="theme6"></li>
+      </ul>
+      <p class="mb-0">Gradient Background</p>
+      <hr> 
+      <ul class="switcher">
+        <li id="theme7"></li>
+        <li id="theme8"></li>
+        <li id="theme9"></li>
+        <li id="theme10"></li>
+        <li id="theme11"></li>
+        <li id="theme12"></li>
+      </ul>
+     </div>
+   </div>
+  <!--end color cwitcher-->
+  </div>
+  <!--End wrapper-->
+  <!-- Bootstrap core JavaScript-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- simplebar js -->
+  <script src="assets/plugins/simplebar/js/simplebar.js"></script>
+  <!-- sidebar-menu js -->
+  <script src="assets/js/sidebar-menu.js"></script>
+  <!-- Custom scripts -->
+  <script src="assets/js/app-script.js"></script>
+  <!--Select Plugins Js-->
+  <script src="assets/plugins/select2/js/select2.min.js"></script>
+  <script>
+      $(document).ready(function() {
+          $('.single-select').select2(); 
+      });
+  </script>
+</body>
+</html>
