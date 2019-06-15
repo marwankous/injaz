@@ -3165,6 +3165,7 @@ table.grid td {
     vertical-align: middle;
 }
 .table thead th {
+    color: #1f345f;
     font-size: .72rem;
     padding-top: .75rem;
     padding-bottom: .75rem;
@@ -5822,6 +5823,12 @@ table.grid td {
 
 }
 
+@media (min-width:1200px) {
+
+    .align-self-center.button{
+        position: absolute; left: 102%; bottom: -1%;
+    }
+}
 
 
 
