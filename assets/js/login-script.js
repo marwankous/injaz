@@ -12,3 +12,9 @@ $(document).ready(function(){
     $( ".nt2" ).animate({opacity: 0 }, 500 );
   });
 });
+
+$(window).on('load', function(){
+
+  $('#pageloader-overlay').fadeOut(1000);
+
+})  
