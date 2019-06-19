@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <title>Facturation</title>
+  <title>INJAZ - Se connecter/S'inscrire</title>
   <!--favicon-->
   <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
   <!-- Bootstrap core CSS-->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Custom Style-->
   <link href="assets/css/app-style.css" rel="stylesheet" />
+  <link href="assets/css/login-style.css" rel="stylesheet" />
 </head>
 <body class="background-img">
     <div id="particles-js"></div>
@@ -24,11 +25,11 @@
               <div class="row h-100">
                 <div class="col-lg-6">
                     <img src="assets/images/logo-ico.png" alt="" class="col-12 image-logo nt1">
-                    <button type="button" class="btn btn-light btn-round waves-effect waves-light m-1 signin button nt1">se connecter</button>
+                    <button type="button" class="btn btn-light  btn-lg btn-square waves-effect waves-light m-1 signin button nt1">se connecter</button>
                 </div>
                 <div class="col-lg-6"> 
                     <img src="assets/images/logo-ico.png" alt="" class="col-12 image-logo nt2">
-                    <button type="button" class="btn btn-light btn-round waves-effect waves-light m-1 signup button nt2">s'inscrire</button>
+                    <button type="button" class="btn btn-light btn-lg btn-square waves-effect waves-light m-1 signup button nt2">s'inscrire</button>
                 </div>  
               </div></div>
           <div class="row">
@@ -42,19 +43,19 @@
                 </div>
                 <div class="form-group">
                   <label for="input-2">Email</label>
-                  <input type="text" class="form-control" id="input-2" placeholder="Entrer l'email Address">
+                  <input type="email" class="form-control" id="input-2" placeholder="Entrer l'email Address">
                 </div>
                 <div class="form-group">
                   <label for="input-4">Mot de passe: *</label>
-                  <input type="text" class="form-control" id="input-4" placeholder="*************">
+                  <input type="password" class="form-control" id="input-4" placeholder="*************">
                 </div>
                 <div class="form-group">
                   <label for="input-5">Confirmer le mot de passe: *</label>
-                  <input type="text" class="form-control" id="input-5" placeholder="*************">
+                  <input type="password" class="form-control" id="input-5" placeholder="*************">
                 </div>
                 <div class="form-group">
                   <label for="input-6">Nom et prénom *</label>
-                  <input type="text" class="form-control" id="input-6" placeholder="06XXXXXXXX">
+                  <input type="text" class="form-control" id="input-6" placeholder="Entrer le nome et le prénom">
                 </div>
                 <div class="form-group">
                   <label for="input-7">Téléphone</label>
@@ -80,7 +81,7 @@
                 </div>
                 <div class="form-group">
                   <label for="input-4">mot de passe</label>
-                  <input type="text" class="form-control" id="input-4" placeholder="Enter Password">
+                  <input type="password" class="form-control" id="input-4" placeholder="Enter Password">
                 </div>
                 <small><a href="#">Mot de passe oublié?</a></small>
                 <div class="form-group py-2">
@@ -103,67 +104,9 @@
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
-<script src="particles.js"></script>
-<script  src="./script.js"></script>
+<!-- End Bootstrap core JavaScript-->
+<script src="assets/js/particles.js"></script>
+<script  src="assets/js/script.js"></script>
+<script  src="assets/js/login-script.js"></script>
 </body>
-<style>
-  *{
-    overflow:hidden;
-  }
-  body,
-  html {
-    height: 100%;
-  }
-  .overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #1ea9b3;
-  z-index: 2;
-  border-radius: 0.25rem 0rem 0rem 0.25rem;
-  transform: translate(-50%);
-
-  
-}
-canvas{
-			min-width: 100vw;
-			height: 100vh;
-			position: fixed;
-    }
-.image-logo{
-  width: 50%;
-  position: absolute;
-  left: 28%;
-  top: 9%;
-
-
-}
-.button{
-  position: absolute;
-  top: 75%;
-  left: 42%;
-
-}
-
-</style>
-
-<script>
-$(document).ready(function(){
-  $(".signin").click(function(){
-    $(".overlay").css({"transform": "translate(-50%)", "transition-duration":"1.5s", "border-radius": "0.25rem 0rem 0rem 0.25rem"});
-    $( ".nt1" ).animate({opacity: 0 }, 1000 );
-    $( ".nt2" ).animate({opacity: 1 }, 1000 );
-  });
-});
-$(document).ready(function(){
-  $(".signup").click(function(){
-    $(".overlay").css({"transform": "translate(50%)", "transition-duration":"1.5s","border-radius": "0rem 0.25rem 0.25rem 0rem"});
-    $( ".nt1" ).animate({opacity: 1 }, 1000 );
-    $( ".nt2" ).animate({opacity: 0 }, 1000 );
-  });
-});
-</script>
-
 </html>
