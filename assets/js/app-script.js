@@ -46,11 +46,11 @@ $(document).ready(function(){
 
   // page loader
 
-    $(window).on('load', function(){
+$(window).on('load', function(){
 
-     $('#pageloader-overlay').fadeOut(1000);
+  $('#pageloader-overlay').fadeOut(1000);
 
-    })  
+  })  
    
    
 $(function () {
@@ -129,8 +129,4 @@ $(function () {
     function theme12() {
       $('#sidebar-wrapper').attr('class', 'bg-theme bg-theme12');
     }
-
-
-
-
 });
