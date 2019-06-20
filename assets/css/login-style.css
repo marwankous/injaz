@@ -34,3 +34,22 @@ canvas{
   left: 35%;
 
 }
+.btn-outline-primary.golden {
+	color: #E6D368;
+	border-color: #E6D368
+}
+.btn-outline-primary.golden:hover {
+	color: #002A5C;
+	background-color: #E6D368;
+	border-color: #E6D368
+}
+
+.btn-outline-primary.golden.disabled, .btn-outline-primary.golden:disabled {
+	color: #E6D368;
+}
+.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active {
+	color: #002A5C;
+	background-color: #E6D368;
+	border-color: #E6D368
+}
+
