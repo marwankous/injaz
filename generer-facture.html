@@ -20,6 +20,8 @@
   <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet"/>
   <!-- Bootstrap core CSS-->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- animate CSS-->
+  <link href="assets/css/animate.css" rel="stylesheet" type="text/css"/>
   <!-- Icons CSS-->
   <link href="assets/css/icons.css" rel="stylesheet" type="text/css"/>
   <!-- Sidebar CSS-->
@@ -280,17 +282,7 @@
                                             <td>Singapore</td>
                                             <td>29</td>
                                             <td>Michael Bruce</td>
-                                            <td>Javascript Developer</td>
-                                            <td>Javascript Developer</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Michael Bruce</td>
-                                            <td>Michael Bruce</td>
-                                            <td>Javascript Developer</td>
-                                            <td>Singapore</td>
-                                            <td>29</td>
-                                            <td>Michael Bruce</td>
-                                            <td>Javascript Developer</td>
+                                            <td><button type="button" class="btn btn-danger btn-sm waves-effect waves-light m-1" data-toggle="modal" data-target="#annuler-produit">Supprimer</button></td>
                                             <td>Javascript Developer</td>
                                         </tr>
                                         <tr>
@@ -300,7 +292,7 @@
                                             <td>Singapore</td>
                                             <td>29</td>
                                             <td>Michael Bruce</td>
-                                            <td>Javascript Developer</td>
+                                            <td><button type="button" class="btn btn-danger btn-sm waves-effect waves-light m-1" data-toggle="modal" data-target="#annuler-produit">Supprimer</button></td>
                                             <td>Javascript Developer</td>
                                         </tr>
                                         <tr>
@@ -310,7 +302,17 @@
                                             <td>Singapore</td>
                                             <td>29</td>
                                             <td>Michael Bruce</td>
+                                            <td><button type="button" class="btn btn-danger btn-sm waves-effect waves-light m-1" data-toggle="modal" data-target="#annuler-produit">Supprimer</button></td>
                                             <td>Javascript Developer</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Michael Bruce</td>
+                                            <td>Michael Bruce</td>
+                                            <td>Javascript Developer</td>
+                                            <td>Singapore</td>
+                                            <td>29</td>
+                                            <td>Michael Bruce</td>
+                                            <td><button type="button" class="btn btn-danger btn-sm waves-effect waves-light m-1" data-toggle="modal" data-target="#annuler-produit">Supprimer</button></td>
                                             <td>Javascript Developer</td>
                                         </tr>
                                     </tbody>
@@ -499,7 +501,7 @@
                       </div>
                       <hr>
                       <div class="d-flex justify-content-start">
-                          <button class="btn btn-success m-1"><i class="fa fa-plus"></i> Ajouter paiement</button>
+                          <button class="btn btn-success m-1" data-toggle="modal" data-target="#ajouter-nouveau-paiement"><i class="fa fa-plus" ></i>Ajouter paiement</button>
                      </div>
                      <br>
                      <div class="col-12">
@@ -526,7 +528,8 @@
                                   <td>29</td>
                                   <td hidden>Michael Bruce</td>
                                   <td hidden>Javascript Developer</td>
-                                  <td><button type="button" class="btn btn-danger btn-sm waves-effect waves-light m-1">Supprimer</button></td>
+                                  <td><button type="button" class="btn btn-danger btn-sm waves-effect waves-light m-1" data-toggle="modal"
+                                    data-target="#supprimer-paiement">Supprimer</button></td>
                               </tr>
                               <tr>
                                   <td hidden>Michael Bruce</td>
@@ -536,7 +539,8 @@
                                   <td>29</td>
                                   <td hidden>Michael Bruce</td>
                                   <td hidden>Javascript Developer</td>
-                                  <td><button type="button" class="btn btn-danger btn-sm waves-effect waves-light m-1">Supprimer</button></td>
+                                  <td><button type="button" class="btn btn-danger btn-sm waves-effect waves-light m-1" data-toggle="modal"
+                                    data-target="#supprimer-paiement">Supprimer</button></td>
                               </tr>
                               <tr>
                                   <td hidden>Michael Bruce</td>
@@ -546,7 +550,8 @@
                                   <td>29</td>
                                   <td hidden>Michael Bruce</td>
                                   <td hidden>Javascript Developer</td>
-                                  <td><button type="button" class="btn btn-danger btn-sm waves-effect waves-light m-1">Supprimer</button></td>
+                                  <td><button type="button" class="btn btn-danger btn-sm waves-effect waves-light m-1" data-toggle="modal"
+                                    data-target="#supprimer-paiement">Supprimer</button></td>
                               </tr>
                               <tr>
                                   <td hidden>Michael Bruce</td>
@@ -556,7 +561,8 @@
                                   <td>29</td>
                                   <td hidden>Michael Bruce</td>
                                   <td hidden>Javascript Developer</td>
-                                  <td><button type="button" class="btn btn-danger btn-sm waves-effect waves-light m-1">Supprimer</button></td>
+                                  <td><button type="button" class="btn btn-danger btn-sm waves-effect waves-light m-1" data-toggle="modal"
+                                    data-target="#supprimer-paiement">Supprimer</button></td>
                               </tr>
                               <tr>
                                   <td hidden>Michael Bruce</td>
@@ -566,7 +572,8 @@
                                   <td>29</td>
                                   <td hidden>Michael Bruce</td>
                                   <td hidden>Javascript Developer</td>
-                                  <td><button type="button" class="btn btn-danger btn-sm waves-effect waves-light m-1">Supprimer</button></td>
+                                  <td><button type="button" class="btn btn-danger btn-sm waves-effect waves-light m-1" data-toggle="modal"
+                                    data-target="#supprimer-paiement">Supprimer</button></td>
                               </tr>
                           </tbody>
                       </table>
@@ -615,12 +622,183 @@
       </ul>
      </div>
    </div>
-
-
-
   <!--end color cwitcher-->
   </div>
   <!--End wrapper-->
+  <!-- Modals -->
+  <!-- Modal-annuler-ce-produit -->
+  <div class="modal fade" id="annuler-produit">
+    <div class="modal-dialog">
+      <div class="modal-content animated fadeInUp border-primary">
+        <div class="modal-header bg-primary">
+          <h5 class="modal-title text-white">Annuler ce produit</h5>
+          <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <form>
+							<div class="row row-lg">
+                  <div class="col-xl-6 form-horizontal">
+                    <div class="form-group row">
+                      <label class="col-xl-12 col-md-3 form-control-label">Catégorie *</label>
+                      <div class=" col-xl-12 col-md-9">
+                        <input type="text" class="form-control" name="categorieRemoveProd" id="categorieremoveProd" placeholder="" readonly>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-xl-12 col-md-3 form-control-label">Prix unitaire d'achat </label>
+                      <div class=" col-xl-12 col-md-9">
+                        <input type="text" class="form-control" name="prixUniRemoveProd" id="prixUniRemoveProd" placeholder="0.0" readonly>
+                      </div>
+                    </div>
+  
+  
+                    <div class="form-group row">
+                      <label class="col-xl-12 col-md-3 form-control-label">Nombre</label>
+                      <div class=" col-xl-12 col-md-9">
+                        <input type="text" class="form-control" name="quantiteRemoveProd" id="quantiteRemoveProd" readonly>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class=" col-xl-12 col-md-9">
+                        <input type="hidden" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 form-horizontal">
+                    <div class="form-group row">
+                      <label class="col-xl-12 col-md-3 form-control-label">Description</label>
+                      <div class=" col-xl-12 col-md-9">
+                        <input type="text" class="form-control" name="descriptionRemoveProd" id="descriptionRemoveProd" readonly>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-xl-12 col-md-3 form-control-label">Unité</label>
+                      <div class=" col-xl-12 col-md-9">
+                        <input type="text" class="form-control" name="uniteRemoveProd" id="uniteRemoveProd" readonly>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-xl-12 col-md-3 form-control-label">Prix HT</label>
+                      <div class=" col-xl-12 col-md-9">
+                        <input type="text" class="form-control" name="prixhtRemoveProd" id="prixhtRemoveProd" readonly>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="form-row d-flex justify-content-start col-lg-12">
+                      <button type="submit" class="btn btn-danger"aria-label="Close">Supprimer</button>
+                    </div>
+                  </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End-Modal-annuler-ce-produit -->
+  <!-- Modal-supprimer-paiement -->
+    <div class="modal fade" id="ajouter-nouveau-paiement">
+        <div class="modal-dialog">
+          <div class="modal-content animated fadeInUp border-primary">
+            <div class="modal-header bg-primary">
+              <h5 class="modal-title text-white">Ajouter nouveau paiement</h5>
+              <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-row  d-flex justify-content-around">
+                      <div class="form-group  col-lg-6">
+                        <label for="mp">Methode de paiement</label>
+                        <input class="form-control" id="mp" type="text">
+                      </div>
+                      <div class="form-group  col-lg-6">
+                        <label for="dp">Date de paiement</label>
+                        <input class="form-control" id="dp" type="text">
+                      </div>
+                    </div>
+                    <div class="form-row  d-flex justify-content-start">
+                      <div class="form-group  col-lg-6">
+                        <label for="adresse">référence</label>
+                        <input class="form-control" id="adresse"type="text">
+                      </div>
+
+                    </div>
+                    <div class="form-row  d-flex justify-content-start">
+                      <div class="icheck-material-primary col-lg-6" style="margin-top: 37px;">
+                          <input type="checkbox"  id="pt" class="pt"/>
+                          <label for="pt">Paiement total</label>
+                      </div>
+                      <div class="form-group col-lg-6 mon">
+                          <label for="montant" >Montant</label>
+                          <input class="form-control" id="montant"type="text">
+                      </div>
+                  </div>
+                    <div class="modal-footer">
+                      <div class="form-row d-flex justify-content-between col-lg-12">
+                        <button type="submit" class="btn btn-primary">Annuler</button>
+                        <button type="submit" class="btn btn-primary">Confirmer</button>
+                      </div>
+                    </div>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- End-Modal-supprimer-paiement -->
+  <!-- Modal-supprimer-paiement -->
+    <div class="modal fade" id="supprimer-paiement">
+        <div class="modal-dialog">
+          <div class="modal-content animated fadeInUp border-primary">
+            <div class="modal-header bg-primary">
+              <h5 class="modal-title text-white">Supprimer paiement</h5>
+              <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-row  d-flex justify-content-around">
+                      <div class="form-group  col-lg-6">
+                        <label for="mp1">Methode de paiement</label>
+                        <input class="form-control" id="mp1" type="text">
+                      </div>
+                      <div class="form-group  col-lg-6">
+                        <label for="dp1">Date de paiement</label>
+                        <input class="form-control" id="dp1"type="text">
+                      </div>
+                    </div>
+                    <div class="form-row  d-flex justify-content-start">
+                      <div class="form-group  col-lg-6">
+                        <label for="adresse1">référence</label>
+                        <input class="form-control" id="adresse1"type="text">
+                      </div>
+
+                    </div>
+                    <div class="form-row  d-flex justify-content-start">
+                      <div class="icheck-material-primary col-lg-6" style="margin-top: 37px;">
+                          <input type="checkbox" id="pt" class="pt"/>
+                          <label for="pt">Paiement total</label>
+                      </div>
+                      <div class="form-group col-lg-6 mon">
+                          <label for="montant1" >Montant</label>
+                          <input class="form-control" id="montant1"type="text">
+                      </div>
+                  </div>
+                    <div class="modal-footer">
+                      <div class="form-row d-flex justify-content-between col-lg-12">
+                        <button type="submit" class="btn btn-primary">Annuler</button>
+                        <button type="submit" class="btn btn-primary">Confirmer</button>
+                      </div>
+                    </div>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- End-Modal-supprimer-paiement -->
+  <!-- End-Modals -->
   <!-- Bootstrap core JavaScript-->
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
@@ -652,34 +830,36 @@
   <!--Select Plugins Js-->
   <script src="assets/plugins/select2/js/select2.min.js"></script>
   <script>
-      $(document).ready(function() {
-        $('.single-select').select2();
-      });
-      $(document).ready(function() {
-        //Default data table
+    $(document).ready(function(){
+      $(".mon").hide();
+      $('.single-select').select2();
+      //Default data table
       $('#default-datatable').DataTable();
-      $('#default-datatable2').DataTable({
-        "autoWidth": false});
-      $('#default-datatable3').DataTable({
-        "autoWidth": false});
-      });
+      $('#default-datatable2').DataTable({"autoWidth": false});
+      $('#default-datatable3').DataTable({"autoWidth": false});
       $("div.actions").insertBefore("div.content");
+      $(".pt").click(function(){
+        if($(this).is(":checked")){$(".mon").show();}
+        else if($(this).is(":not(:checked)")){$(".mon").hide();}
+      });
+    });
   </script>
-       <style>
-          .wizard .content {
-           min-height: 100px !important;
+  <style>
+    .wizard .content {
+      min-height: 100px !important;
        }
-       .wizard .content > .body {
-           width: 100% !important;
-           height: auto !important;
-           padding: 15px !important;
-           position: absolute;
-       }
-       .wizard .content .body.current {
-           position: relative !important;
-       }
-       #steps-uid-0 .select2-container--default .select2-selection--single {
-          background-color: #F3F4FA !important;
-          border: 1px solid #ccc !important;}
+    .wizard .content > .body {
+      width: 100% !important;
+      height: auto !important;
+      padding: 15px !important;
+      position: absolute;
+      }
+    .wizard .content .body.current {
+      position: relative !important;
+      }
+    #steps-uid-0 .select2-container--default .select2-selection--single {
+      background-color: #F3F4FA !important;
+      border: 1px solid #ccc !important;
+      }
    </style>
 </html>
