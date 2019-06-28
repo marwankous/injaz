@@ -249,7 +249,7 @@
                       </div> -->
                 <!-- <br> -->
                 <div class="form-row  d-flex justify-content-end col-lg-12">
-                  <button type="button" class="btn btn-warning waves-effect waves-light m-1">Modifie</button>
+                  <button type="button" class="btn btn-warning waves-effect waves-light m-1" data-toggle="modal" data-target="#modifie">Modifie</button>
                 </div>
               </div>
             </div>
@@ -595,6 +595,82 @@
     </div>
   </div>
   <!-- End-Modal-ajouter-categorie-client -->
+  <!-- Modal-modifie -->
+  <div class="modal fade" id="modifie">
+    <div class="modal-dialog">
+      <div class="modal-content animated fadeInUp border-primary">
+        <div class="modal-header bg-primary">
+          <h5 class="modal-title text-white">Modifie</h5>
+          <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-row  d-flex justify-content-around">
+              <div class="form-group  col-lg-6">
+                <label for="nrs">Nom ou raison social</label>
+                <input class="form-control" id="nrs" type="text">
+              </div>
+              <div class="form-group  col-lg-6">
+                <label for="if">IF *</label>
+                <input class="form-control" id="if"type="text">
+              </div>
+            </div>
+            <div class="form-row  d-flex justify-content-around">
+              <div class="form-group  col-lg-6">
+                <label for="adresse">Adresse</label>
+                <input class="form-control" id="adresse"type="text">
+              </div>
+              <div class="form-group  col-lg-6">
+                <label for="ice">ICE *</label>
+                <input class="form-control" id="ice"type="text">
+              </div>
+            </div>
+            <div class="form-row  d-flex justify-content-around">
+              <div class="form-group  col-lg-6">
+                <label for="ville">Ville *</label>
+                <input class="form-control" id="ville" type="text">
+              </div>
+              <div class="form-group  col-lg-6">
+                <label for="telephone">Téléphone</label>
+                <input class="form-control" id="telephone"type="number">
+              </div>
+            </div>
+            <div class="form-row  d-flex justify-content-around">
+              <div class="form-group col-lg-6">
+                <label>Catégorie Client *</label>
+                <select class="form-control single-select">
+                  <option>India</option>
+                  <option>England</option>
+                  <option>America</option>
+                  <option>China</option>
+                  <option>Australiya</option>
+                  <option>Newzeland</option>
+                  <option>Dubai</option>
+                  <option>United Kingdom</option>
+                </select>
+              </div>
+              <div class="form-group  col-lg-6">
+                <label for="fax">fax</label>
+                <input class="form-control" id="fax" type="text">
+              </div>
+            </div>
+            <div class="form-row  d-flex justify-content-start">
+              <div class="form-group  col-lg-6">
+                <label for="email">Email</label>
+                <input class="form-control" id="email"type="email">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary" id="submit">Valider</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End-Modal-modifie -->
   <!-- End-Modals -->
   <!-- Bootstrap core JavaScript-->
   <script src="assets/js/jquery.min.js"></script>
