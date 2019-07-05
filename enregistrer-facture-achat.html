@@ -220,7 +220,7 @@
                           <hr>
                             <div class="col-12">
                                   <div style="width:100%">
-                                  <table id="default-datatable" class="table table-bordered table-striped">
+                                  <table class="table table-bordered table-striped  default-datatable-plug">
                                     <thead>
                                         <tr>
                                             <th style="display: none;">index</th>
@@ -348,7 +348,7 @@
                       <!-- Table row -->
                       
                                 <div class="col-12">
-                                <table id="default-datatable2"  class="table table-bordered">
+                                <table class="table table-bordered  default-datatable-plug">
                                   <thead>
                                       <tr>
                                           <th style="display: none;">index</th>
@@ -488,7 +488,7 @@
                      <br>
                      <div class="col-12">
                         <div style="width:100%">
-                        <table id="default-datatable3" class="table table-bordered">
+                        <table class="table table-bordered  default-datatable-plug">
                           <thead>
                               <tr>
                                   <th hidden>Index</th>
@@ -807,47 +807,38 @@
   <script src="assets/plugins/bootstrap-datatable/js/buttons.html5.min.js"></script>
   <script src="assets/plugins/bootstrap-datatable/js/buttons.print.min.js"></script>
   <script src="assets/plugins/bootstrap-datatable/js/buttons.colVis.min.js"></script>
+  <script src="assets\js\table-config.js"></script>
   
       
   <!--Select Plugins Js-->
   <script src="assets/plugins/select2/js/select2.min.js"></script>
   <script>
-      $(document).ready(function() {
-      //Implement select2 on group-select 
-        $('.single-select').select2();
-      });
-      $(document).ready(function() {
-      //Default data table
-      $('#default-datatable').DataTable();
-      $('#default-datatable2').DataTable({
-        "autoWidth": false});
-      $('#default-datatable3').DataTable({
-        "autoWidth": false});
-      });
-      //Replace action buttons
-      $("div.actions").insertBefore("div.content");
+    //Implement select2 on group-select 
+    $(document).ready(function() {
+      $('.single-select').select2();});
+    //Replace action buttons
+    $("div.actions").insertBefore("div.content");
       //Show hide "montant" input on modals 
-      $(".pt").click(function(){
-        if($(this).is(":checked")){$(".mon").show();}
-        else if($(this).is(":not(:checked)")){$(".mon").hide();}
+    $(".pt").click(function(){
+      if($(this).is(":checked")){$(".mon").show();}
+      else if($(this).is(":not(:checked)")){$(".mon").hide();}
       });
   </script>
-       <style>
-            .wizard .content {
-               min-height: 100px !important;
-           }
-           .wizard .content > .body {
-               width: 100% !important;
-               height: auto !important;
-               padding: 15px !important;
-               position: absolute;
-           }
-           .wizard .content .body.current {
-               position: relative !important;
-           }
-           #steps-uid-0 .select2-container--default .select2-selection--single {
-              background-color: #F3F4FA !important;
-              border: 1px solid #ccc !important;}
-       </style>
+  <style>
+    .wizard .content {
+       min-height: 100px !important;}
+    .wizard .content > .body {
+      width: 100% !important;
+      height: auto !important;
+      padding: 15px !important;
+      position: absolute;
+      }
+    .wizard .content .body.current {
+      position: relative !important;
+      }
+    #steps-uid-0 .select2-container--default .select2-selection--single {
+      background-color: #F3F4FA !important;
+      border: 1px solid #ccc !important;}
+  </style>
 </body>
 </html>

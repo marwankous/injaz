@@ -266,7 +266,7 @@
                 </div>
                 <div id="collapse-6" class="collapse show" data-parent="#accordion2">
                   <div class="card-body">
-                    <table id="default-datatable" class="table table-bordered table-striped">
+                    <table class="table table-bordered table-striped default-datatable-plug">
                       <thead>
                         <tr>
                           <th>N° Facture</th>
@@ -693,17 +693,11 @@
   <script src="assets/plugins/bootstrap-datatable/js/buttons.html5.min.js"></script>
   <script src="assets/plugins/bootstrap-datatable/js/buttons.print.min.js"></script>
   <script src="assets/plugins/bootstrap-datatable/js/buttons.colVis.min.js"></script>
-
-  <script>
-    $(document).ready(function () {
-      //Default data table
-      $('#default-datatable').DataTable();
-    });
-  </script>
-  <!--Select Plugins Js-->
+  <script src="assets\js\table-config.js"></script>
   <script src="assets/plugins/select2/js/select2.min.js"></script>
   <script>
     $(document).ready(function () {
+      //Select Plugins Js
       $('.single-select').select2();
     });
   </script>

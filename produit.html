@@ -207,7 +207,7 @@
           <div class="col-lg-12">
             <div class="card">
               <div class="card-body">
-                <table id="example" class="table-bordered table table-striped" style="width: 100%;">
+                <table  class="table-bordered table table-striped default-datatable-plug">
                   <thead>
                     <tr>
                         <th style="display: none;">id</th>
@@ -835,51 +835,36 @@
   <script src="assets/plugins/bootstrap-datatable/js/buttons.html5.min.js"></script>
   <script src="assets/plugins/bootstrap-datatable/js/buttons.print.min.js"></script>
   <script src="assets/plugins/bootstrap-datatable/js/buttons.colVis.min.js"></script>
-
+  <script src="assets\js\table-config.js"></script>
   <script>
-     $(document).ready(function() {
-      //Default data table
-       $('#default-datatable').DataTable();
-
-       var table = $('#example').DataTable( {
-        lengthChange: false,
-        buttons: [ 'excel', 'pdf' ]
+    $(document).ready(function() {
+      //Default select2
+      $('.single-select').select2();
       });
-     table.buttons().container().appendTo( '#example_wrapper .col-md-6:eq(0)' );
-     });
-      
-      $(document).ready(function() {
-          $('.single-select').select2();
-          $("body > span.select2-container--open").removeClass("select2-container");
-      });
-
+      // tva calculation
       var prancipall ;
         $('.iiHt').change(function() {
-            var $tva  = $('select.iiTva').children('option:selected').val();
-            $('.iiTtc').val(Number.parseFloat($(this).val()*$tva).toFixed(2));
-            prancipall = 1;
+          var $tva  = $('select.iiTva').children('option:selected').val();
+          $('.iiTtc').val(Number.parseFloat($(this).val()*$tva).toFixed(2));
+          prancipall = 1;
         });
-
         $('.iiTtc').change(function() {
             var $tva  = $('select.iiTva').children('option:selected').val();
             $('.iiHt').val(Number.parseFloat($(this).val()/$tva).toFixed(2));
             prancipall = 2;
         });
-
         function twHt() {
             var $tva  = $('select.iiTva').children('option:selected').val();
-            $('.iiHt').val(Number.parseFloat($('.iiTtc').val()/$tva).toFixed(2));
-       }
+            $('.iiHt').val(Number.parseFloat($('.iiTtc').val()/$tva).toFixed(2));}
         function twTtc() {
             var $tva  = $('select.iiTva').children('option:selected').val();
             $('.iiTtc').val(Number.parseFloat($( '.iiHt').val()*$tva).toFixed(2));
        }
-
         $('.iiTva').change(function() {
             if (prancipall == 2 ){
-                twHt();
+              twHt();
             }else{
-                twTtc();
+              twTtc();
             }
         });
 

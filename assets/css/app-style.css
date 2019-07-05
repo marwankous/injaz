@@ -5837,7 +5837,14 @@ table.grid td {
     background-size:cover;
     background-attachment:fixed;
 }
-
-
+.bg-icon{
+    font-size: 19px;
+    font-weight: 300;
+}
+.pay{
+    font-family: serif;
+    font-weight: bold;
+    font-size: x-large;
+}
 
 

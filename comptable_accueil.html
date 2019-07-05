@@ -43,25 +43,25 @@
     </a>
   </div>
   <ul class="sidebar-menu do-nicescrol">
-      <li class="sidebar-header">General</li>
-      <li><a href="index.html" class="waves-effect"><i class="zmdi fa fa-home"></i> <span>Accueil</span></a></li>
-      <li><a href="produit.html" class="waves-effect"><i class="zmdi fa fa-cubes"></i> <span>Produits</span></a></li>
-      <li><a href="javaScript:void();" class="waves-effect"><i class="zmdi zmdi-layers"></i><span>Vente</span> <i class="fa fa-angle-left pull-right"></i></a>
-        <ul class="sidebar-submenu">
-        <li><a href="client.html"><i class="zmdi zmdi-long-arrow-right"></i> Clients</a></li>
-        <li><a href="facture.html"><i class="zmdi zmdi-long-arrow-right"></i> Factures</a></li>
-        <li><a href="facture.html"><i class="zmdi zmdi-long-arrow-right"></i> Generer Facture</a></li>
-        </ul>
-      </li>
-      <li><a href="javaScript:void();" class="waves-effect"><i class="zmdi zmdi-layers"></i><span>Achat</span> <i class="fa fa-angle-left pull-right"></i></a>
-        <ul class="sidebar-submenu">
-        <li><a href="fournisseur.html"><i class="zmdi zmdi-long-arrow-right"></i> Fournisseurs</a></li>
-        <li><a href="facture_achat.html"><i class="zmdi zmdi-long-arrow-right"></i> Facture d'Achat</a></li>
-        <li><a href="#"><i class="zmdi zmdi-long-arrow-right"></i> Enregistrer Facture Achat</a></li>
-        </ul>
-      </li>
-      <li>
-    </ul>
+     <li class="sidebar-header">General</li>
+     <li><a href="index.html" class="waves-effect"><i class="zmdi fa fa-home"></i> <span>Accueil</span></a></li>
+     <li><a href="produit.html" class="waves-effect"><i class="zmdi fa fa-cubes"></i> <span>Produits</span></a></li>
+     <li><a href="javaScript:void();" class="waves-effect"><i class="zmdi zmdi-layers"></i><span>Vente</span> <i class="fa fa-angle-left pull-right"></i></a>
+       <ul class="sidebar-submenu">
+       <li><a href="client.html"><i class="zmdi zmdi-long-arrow-right"></i> Clients</a></li>
+       <li><a href="facture.html"><i class="zmdi zmdi-long-arrow-right"></i> Factures</a></li>
+       <li><a href="facture.html"><i class="zmdi zmdi-long-arrow-right"></i> Generer Facture</a></li>
+       </ul>
+     </li>
+     <li><a href="javaScript:void();" class="waves-effect"><i class="zmdi zmdi-layers"></i><span>Achat</span> <i class="fa fa-angle-left pull-right"></i></a>
+       <ul class="sidebar-submenu">
+       <li><a href="fournisseur.html"><i class="zmdi zmdi-long-arrow-right"></i> Fournisseurs</a></li>
+       <li><a href="facture_achat.html"><i class="zmdi zmdi-long-arrow-right"></i> Facture d'Achat</a></li>
+       <li><a href="#"><i class="zmdi zmdi-long-arrow-right"></i> Enregistrer Facture Achat</a></li>
+       </ul>
+     </li>
+     <li>
+   </ul>
   
   </div>
   <!--End sidebar-wrapper-->
@@ -127,6 +127,7 @@
 	   </div>
      </div>
     <!-- End Breadcrumb-->
+
          <div class="row">
           <div class="col-lg-12">
             <div class="card">
@@ -145,23 +146,18 @@
                            </select>
                         </div>
                  </div>
-                <div class="form-row d-flex justify-content-between">
-                      <div class="form-group col-5">
-                          <label>Etat de la facture</label>
-                          <select class="form-control">
-                            <option>Newzeland</option>
-                            <option>Dubai</option>
-                            <option>United Kingdom</option>
-                           </select>
-                        </div>
-                 </div>
                  <button type="button" class="btn btn-outline-dark waves-effect waves-light m-1"> <i class="fa fa-filter"></i> <span>Filtrer</span> </button>
           </div>
         </div><!-- End Row-->
+        
+      </div>
+    </div>
+         <div class="row">
+          <div class="col-lg-12">
             <div class="card">
               <div class="card-body">
                 <div class="table-responsive">
-                <table class="table table-bordered table-striped default-datatable-pdf-plug">
+                <table class="table table-bordered table-striped  default-datatable-plug">
                   <thead>
                     <tr>
                         <th>Numéro de Facturation</th>
@@ -175,40 +171,41 @@
                         <th>PDF</th>
                         <th>Etat</th>
                         <th>Accès à la facture</th>
-                      </tr>
-                    </thead>
-                    <tbody>
+                    </tr>
+                  </thead>
+                  <tbody>
                       <tr>
-                        <td style="display: none;">Tiger Nixon</td>
                         <td>System Architect</td>
                         <td>Edinburgh</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>61</td>
                         <td>61</td>
                         <td>2011/04/25</td>
                         <td>$320,800</td>
+                        <td>$320,800</td>
                         <td>System Architect</td>
-                        <td>Edinburgh</td>
-                        <td>61</td>
-                        <td>2011/04/25</td>
-                        <td>2011/04/25</td>
+                        <td>System Architect</td>
                       </tr>
                     </tbody>
                     <tfoot>
                       <tr>
-                          <th>Numéro de Facturation</th>
-                          <th>Client</th>
-                          <th>Titre</th>
-                          <th>Date de facturaion</th>
-                          <th>Date de paiement</th>
-                          <th>Montant TTC</th>
-                          <th>Reduction</th>
-                          <th>TVA</th>
-                          <th>PDF</th>
-                          <th>Etat</th>
-                          <th class="tdhide">Accès à la facture</th>
+                        <th>Numéro de Facturation</th>
+                        <th>Client</th>
+                        <th>Titre</th>
+                        <th>Date de facturaion</th>
+                        <th>Date de paiement</th>
+                        <th>Montant TTC</th>
+                        <th>Reduction</th>
+                        <th>TVA</th>
+                        <th>PDF</th>
+                        <th>Etat</th>
+                        <th class="tdhide">Accès à la facture</th>
                       </tr>
                     </tfoot>
                   </table>
                 </div>
+                <button type="button" class="btn btn-primary btn-lg waves-effect waves-light m-1">Retour à l'acceuil</button>
           </div>
         </div><!-- End Row-->
         
@@ -279,7 +276,10 @@
   <script src="assets/plugins/bootstrap-datatable/js/buttons.colVis.min.js"></script>
   <script src="assets\js\table-config.js"></script>
   <script>
-      $(document).ready(function() {$('.single-select').select2();});
+   $(document).ready(function() {
+    //Default select2
+    $('.single-select').select2(); 
+      });
   </script>
 </body>
 </html>

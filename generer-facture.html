@@ -261,7 +261,7 @@
                           <hr>
                             <div class="col-12">
                                   <div style="width:100%">
-                                  <table id="default-datatable" class="table table-bordered table-striped">
+                                  <table class="table table-bordered table-striped default-datatable-plug">
                                     <thead>
                                         <tr>
                                             <th style="display: none;">index</th>
@@ -379,7 +379,7 @@
                       </div><!-- /.row -->
                       <!-- Table row -->
                                 <div class="col-12">
-                                <table id="default-datatable2"  class="table table-bordered table-striped">
+                                <table class="table table-bordered table-striped default-datatable-plug">
                                   <thead>
                                       <tr>
                                           <th style="display: none;">index</th>
@@ -495,7 +495,7 @@
                      <br>
                      <div class="col-12">
                         <div style="width:100%">
-                        <table id="default-datatable3" class="table table-bordered table-striped">
+                        <table class="table table-bordered table-striped default-datatable-plug">
                           <thead>
                               <tr>
                                   <th hidden>Index</th>
@@ -888,18 +888,13 @@
   <script src="assets/plugins/bootstrap-datatable/js/buttons.html5.min.js"></script>
   <script src="assets/plugins/bootstrap-datatable/js/buttons.print.min.js"></script>
   <script src="assets/plugins/bootstrap-datatable/js/buttons.colVis.min.js"></script>
-  
-      
+  <script src="assets\js\table-config.js"></script>
   <!--Select Plugins Js-->
   <script src="assets/plugins/select2/js/select2.min.js"></script>
   <script>
     $(document).ready(function(){
       $(".mon").hide();
       $('.single-select').select2();
-      //Default data table
-      $('#default-datatable').DataTable();
-      $('#default-datatable2').DataTable({"autoWidth": false});
-      $('#default-datatable3').DataTable({"autoWidth": false});
       $("div.actions").insertBefore("div.content");
       $(".pt").click(function(){
         if($(this).is(":checked")){$(".mon").show();}
